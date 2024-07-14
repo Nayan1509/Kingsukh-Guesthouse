@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>King Sukh Guest House</title>
+</head>
+
+<body>
+    <!-- <header class="nav-container"> -->
+    <header class="header">
+        <nav>
+            <div class="nav-bar">
+                <a class="logo" href="#">King Sukh <br />GuestHouse</a>
+                <div class="nav-menu-btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.link/at5ion">
+                <button class="book-btn nav-btn">Book Now</button>
+            </a>
+        </nav>
+        <section class="home-page" id="home">
+            <div class="home">
+                <div class="title">
+                    <p>Simple-Unique-Friendly</p>
+                    <div class="title-inner">
+                        <div class="cafe">
+                            <div class="cafe-inner">
+                                <h2>Make Yourself At Home</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mozart">
+                        <div class="mozart-inner">
+                            <h1>In Our <span class="highlight">Guest House</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- booking form  -->
+
+    <section class="booking-container">
+        <div class="booking-form">
+            <button type="button" class="book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal">CHECK
+                AVAILABILITY</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="bookingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Check For Availability </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span><i class="ri-calendar-2-fill"></i></span>
+                                        <div>
+                                            <label for="check-in">CHECK-IN</label>
+                                            <input type="date" id="check-in" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span><i class="ri-calendar-2-fill"></i></span>
+                                        <div>
+                                            <label for="check-out">CHECK-OUT</label>
+                                            <input type="date" id="check-out" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span><i class="ri-user-fill"></i></span>
+                                        <div>
+                                            <label for="guest">GUESTS</label>
+                                            <input type="number" id="guest-no" placeholder="No of Guest" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group flex-nowrap">
+                                        <span><i class="ri-hotel-bed-fill"></i></span>
+                                        <div>
+                                            <label for="guest">ROOM TYPE</label>
+                                            <select id="room-type" class="form-select"
+                                                aria-label="Default select example">
+                                                <option value="DOUBLE BED AC">DOUBLE BED AC</option>
+                                                <option value="DOUBLE BED NON AC">DOUBLE BED NON AC</option>
+                                                <option value="SINGLE BED AC">SINGLE BED AC</option>
+                                                <option value="SINGLE BED NON AC">SINGLE BED NON AC</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="whatsappButton" class="book-btn">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="container about-container bg-light ">
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 about-image">
+                    <img src="./assets/out.jpg" alt="about" />
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+                    <div class="about-content">
+                        <p class="section-subheader">ABOUT US</p>
+                        <h2 class="section-header">The Best Holidays Start Here!</h2>
+                        <p class="about-description">
+                            Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of
+                            Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam,
+                            Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish
+                            delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons,
+                            promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the
+                            hidden gems of Purulia, creating memories that linger long after your stay.
+                        </p>
+                        <div class="about-links">
+                            <a class="address-link" href="https://maps.app.goo.gl/v34A1sYMMBhPSEtF8">Address: Beside
+                                Barshal
+                                Water Tank, Manpur, Barhanti, West Bengal 723156</a><br />
+                            <a href="tel:+919007062180" class="address-link"> Contact us: +91 9007062180 </a>
+                        </div>
+                        <div class="about-btn-container">
+                            <button class="book-btn ">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rooms section   -->
+    <section class="rooms" id="rooms">
+        <div class="container my-5">
+            <p class="section-subheader">OUR LIVING ROOM</p>
+            <h2 class="section-header">The Most Memorable Rest Time Starts Here.</h2>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card-outer">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/small.jpg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-icons">
+                                    <span><i class="ri-heart-fill"></i></span>
+                                    <span><i class="ri-paint-fill"></i></span>
+                                    <span><i class="ri-shield-star-line"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Cozy Heaven Room</h4>
+                                <p class="card-text">Escape to comfort in our Cozy Heaven Room, a snug retreat designed
+                                    for intimate relaxation and serene tranquility.</p>
+                                <h5>Starting from : <span>₹ 1000/night</span></h5>
+                            </div>
+                            <div class="card-btn"><button class="book-btn">BOOK NOW</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-outer">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/large.jpg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-icons">
+                                    <span><i class="ri-heart-fill"></i></span>
+                                    <span><i class="ri-paint-fill"></i></span>
+                                    <span><i class="ri-shield-star-line"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Spacious Serenity Suite</h4>
+                                <p class="card-text">Indulge in luxury and ample space in our Spacious Serenity Suite,
+                                    where
+                                    tranquility meets roomy elegance.</p>
+                                <h5>Starting from : <span>₹ 1500/night</span></h5>
+                            </div>
+                            <div class="card-btn"><button class="book-btn">BOOK NOW</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-outer">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/room1.jpg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-icons">
+                                    <span><i class="ri-heart-fill"></i></span>
+                                    <span><i class="ri-paint-fill"></i></span>
+                                    <span><i class="ri-shield-star-line"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Spacious Serenity Suite</h4>
+                                <p class="card-text">Indulge in luxury and ample space in our Spacious Serenity Suite,
+                                    where
+                                    tranquility meets roomy elegance.</p>
+                                <h5>Starting from : <span>₹ 1500/night</span></h5>
+                            </div>
+                            <div class="card-btn"><button class="book-btn">BOOK NOW</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section  -->
+    <section class="service" id="service">
+        <div class="container service-container my5">
+            <div class="service-content">
+                <p class="section-subheader">SERVICES</p>
+                <h2 class="section-header">Strive Only For The Best.</h2>
+                <ul class="service-list">
+                    <li>
+                        <span><i class="ri-shield-star-line"></i></span>
+                        High Class Security
+                    </li>
+                    <li>
+                        <span><i class="ri-24-hours-line"></i></span>
+                        24 Hours Room Service
+                    </li>
+                    <li>
+                        <span><i class="ri-headphone-line"></i></span>
+                        Conference Room
+                    </li>
+                    <li>
+                        <span><i class="ri-map-2-line"></i></span>
+                        Tourist Guide Support
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner section  -->
+    <section class="banner" id="banner">
+        <div class="container my-5">
+            <div class="banner-content">
+                <div class="banner-card">
+                    <h4>100+</h4>
+                    <p>Bookings Completed</p>
+                </div>
+                <div class="banner-card">
+                    <h4>150+</h4>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section  -->
+    <section class="gallery" id="gallery">
+        <div class="container-fluid bg-light py-5 mt-5">
+            <p class="section-subheader">GALLERY</p>
+            <h2 class="section-header">Take a look in our gallery </h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Ayodhya"
+                    data-imgsrc="./assets/ayodhya.webp">
+                    <img src="./assets/ayodhya.webp" alt="Image 1">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Baranti"
+                    data-imgsrc="./assets/baranti.webp">
+                    <img src="./assets/baranti.webp" alt="Image 2">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/flower.jpg">
+                    <img src="./assets/flower.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/1.jpg">
+                    <img src="./assets/1.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/mithonDam.webp">
+                    <img src="./assets/mithonDam.webp" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/palash.webp">
+                    <img src="./assets/palash.webp" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/large.jpg">
+                    <img src="./assets/large.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/room1.jpg">
+                    <img src="./assets/room1.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/small.jpg">
+                    <img src="./assets/small.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/out.jpg">
+                    <img src="./assets/out.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+                <div class="col gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    data-title="Image 3 Description" data-imgsrc="./assets/recep.jpg">
+                    <img src="./assets/recep.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Click to view</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content gallery-modal-content">
+                        <div
+                            class="modal-body gallery-modal-body d-flex justify-content-center align-items-center position-relative">
+                            <img src="from-js" id="modalImage" class="img-fluid modal-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section class="mt-5" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Contact Information Block -->
+                <div class="col-sm-12 col-md-12 col-lg-6 contact-info ">
+                    <h1 class="section-subheader">Contact Info</h1>
+                    <div class="row row-cols-md-2 g-4">
+                        <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="aos-item__inner">
+                                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                    <div class="d-flex justify-content-start">
+                                        <i class="ri-mail-open-line h5 pe-1"></i>
+                                        <span class="h5">Email</span>
+                                    </div>
+                                    <span><a href="mailto:kkghosh0099@gmail.com"
+                                            class="address-link">kkghosh0099@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="aos-item__inner">
+                                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                    <div class="d-flex justify-content-start">
+                                        <i class="ri-phone-line h5 pe-2"></i>
+                                        <span class="h5">Phone</span>
+                                    </div>
+                                    <span><a href="tel:+919007062180" class="address-link">+91 9007062180
+                                        </a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="aos-item__inner">
+                            <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                <div class="d-flex justify-content-start">
+                                    <i class="ri-map-pin-line h5 pe-2"></i>
+                                    <span class="h5">Office location</span>
+                                </div>
+                                <span><a class="address-link" href="https://maps.app.goo.gl/v34A1sYMMBhPSEtF8">Beside
+                                        Barshal
+                                        Water Tank, Manpur, Barhanti, West Bengal 723156</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+                        <div class="mt-4 w-100 aos-item__inner">
+                            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4495.899216982335!2d86.85747442345411!3d23.586432946558503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1720604959316!5m2!1sen!2sin">
+                                <a href="https://www.maps.ie/distance-area-calculator.html"></a>    
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Block -->
+                <div class="col-sm-12 col-md-12 col-lg-6 contact-form">
+                    <h2 class="pb-4">Send us a message</h2>
+                    <div class="row g-4 form-box">
+                        <div class="col-sm-6  input-area">
+                            <input type="text" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="col-sm-6  input-area">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+
+                        <div class="col-sm-6  input-area">
+                            <input type="email" required>
+                            <span>E-mail</span>
+                        </div>
+                        <div class="col-sm-6 input-area">
+                            <input type="tel" required>
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="col-12 input-area">
+                            <textarea required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="book-btn btn-dark">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row footer-container">
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <div class="logo-container">
+                        <a class="logo" href="#">King Sukh <br /> GuestHouse</a>
+                    </div>
+                    <p class="footer-description">
+                        Discover a world of comfort, luxury, and adventure as you explore
+                        our curated selection of hotels, making every moment of your getaway
+                        truly extraordinary.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Browse Destinations</a></li>
+                        <li><a href="#">Special Offers & Packages</a></li>
+                        <li><a href="#">Room Types & Amenities</a></li>
+                        <li><a href="#">Customer Reviews & Ratings</a></li>
+                        <li><a href="#">Travel Tips & Guides</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>OUR SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Concierge Assistance</a></li>
+                        <li><a href="#">Flexible Booking Options</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li><a href="#">Wellness & Recreation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>CONTACT US</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="address-link" href="https://maps.app.goo.gl/v34A1sYMMBhPSEtF8">Beside Barshal
+                                Water Tank, Manpur, Barhanti, West Bengal 723156</a>
+                        </li>
+                        <li>
+                            <a href="mailto:kkghosh0099@gmail.com" class="address-link">kkghosh0099@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+919007062180" class="address-link">+91 9007062180 </a>
+                        </li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+                        <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+                        <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+                        <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                Copyright © 2024 Kingsukh Guest House. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
